@@ -1,0 +1,20 @@
+{
+  "task": "test",
+  "log_path": "./log",
+  "gpu_ids": [0,1,2,3],
+  "batch_size": 1, 
+  "nc": [16, 1],
+  "patch_size": [128, 128], 
+  "stride_size": [16, 16],
+  "d_size": 3,           
+  "max_epoch": 80, 
+  "stage": 5,
+  "scale": 3,
+  "n_channels": 1,
+  "pretained_path": "./model_save/model_gray_best.pth",
+  "test": {
+      "sigma": [15,25,50],
+      "dataroot_H":  "./dataset/gray_test" ,//"./test_data/color"  "../dataset/color_test"
+      "n_channels": 1
+  }
+}
